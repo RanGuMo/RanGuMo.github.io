@@ -424,28 +424,28 @@ C:\Program Files\MongoDB\Server\3.2\bin
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-安装MongoDB"><a href="#1-安装MongoDB" class="headerlink" title="1.安装MongoDB"></a>1.安装MongoDB</h2><h3 id="1-1-安装64位的MonogoDB"><a href="#1-1-安装64位的MonogoDB" class="headerlink" title="1.1.安装64位的MonogoDB"></a>1.1.安装64位的MonogoDB</h3><p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206210342565.png" alt="image-20221206210342565"></p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206210439775.png" alt="image-20221206210439775"></p>
-<h3 id="1-2-配置环境变量"><a href="#1-2-配置环境变量" class="headerlink" title="1.2.配置环境变量"></a>1.2.配置环境变量</h3><p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206210742727.png" alt="image-20221206210742727"></p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206210917004.png" alt="image-20221206210917004"></p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206210937274.png" alt="image-20221206210937274"></p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206211010846.png" alt="image-20221206211010846"></p>
+                <h2 id="1-安装MongoDB"><a href="#1-安装MongoDB" class="headerlink" title="1.安装MongoDB"></a>1.安装MongoDB</h2><h3 id="1-1-安装64位的MonogoDB"><a href="#1-1-安装64位的MonogoDB" class="headerlink" title="1.1.安装64位的MonogoDB"></a>1.1.安装64位的MonogoDB</h3><p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206210342565.png" alt="image-20221206210342565"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206210439775.png" alt="image-20221206210439775"></p>
+<h3 id="1-2-配置环境变量"><a href="#1-2-配置环境变量" class="headerlink" title="1.2.配置环境变量"></a>1.2.配置环境变量</h3><p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206210742727.png" alt="image-20221206210742727"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206210917004.png" alt="image-20221206210917004"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206210937274.png" alt="image-20221206210937274"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206211010846.png" alt="image-20221206211010846"></p>
 <p>添加如下内容：</p>
 <pre class="line-numbers language-none"><code class="language-none">C:\Program Files\MongoDB\Server\3.2\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206211124771.png" alt="image-20221206211124771"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206211124771.png" alt="image-20221206211124771"></p>
 <h3 id="1-3-在c盘根目录创建一个文件夹-data"><a href="#1-3-在c盘根目录创建一个文件夹-data" class="headerlink" title="1.3.在c盘根目录创建一个文件夹 data"></a>1.3.在c盘根目录创建一个文件夹 data</h3><pre><code>- 在data中创建一个文件夹db
 </code></pre>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206211244569.png" alt="image-20221206211244569"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206211244569.png" alt="image-20221206211244569"></p>
 <h3 id="1-4-启动MongoDB-服务器"><a href="#1-4-启动MongoDB-服务器" class="headerlink" title="1.4. 启动MongoDB 服务器"></a>1.4. 启动MongoDB 服务器</h3><p><code>win+R</code> 打开<code>cmd</code>命令行窗口</p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206211637613.png" alt="image-20221206211637613"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206211637613.png" alt="image-20221206211637613"></p>
 <pre><code>    - 输入 `mongod` 启动 `mongodb`服务器
     - 32位注意：
         第一次启动服务器时，需要输入如下内容
             mongod --storageEngine=mmapv1
     后续再次启动，不再需要
 
-![image-20221206211727165](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206211727165.png)
+![image-20221206211727165](../images/MongoDB学习/image-20221206211727165.png)
 </code></pre>
 <ul>
 <li><p>可以通过如下命令行来指定 数据库的端口号（默认端口号为27017，不建议更改）</p>
@@ -453,7 +453,7 @@ C:\Program Files\MongoDB\Server\3.2\bin
 </li>
 <li><p>再打开一个<code>cmd</code>窗口</p>
 <pre><code>  - 输入 `mongo` 连接`mongodb` ，出现` &gt;`     即为成功！
-  - ![image-20221206211918011](C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206211918011.png)
+  - ![image-20221206211918011](../images/MongoDB学习/image-20221206211918011.png)
 </code></pre>
 </li>
 </ul>
@@ -461,7 +461,7 @@ C:\Program Files\MongoDB\Server\3.2\bin
 <li><p>在c盘根目录创建<code>data</code></p>
 <pre><code>    - 在`data`下创建`db`和`log`文件夹
 </code></pre>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206212805221.png" alt="image-20221206212805221"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206212805221.png" alt="image-20221206212805221"></p>
 </li>
 <li><p>创建配置文件<br>       在目录 <code>C:\Program Files\MongoDB\Server\3.2</code> 下添加一个配置文件<code>mongod.cfg</code><br><code>mongod.cfg</code> 文件内容如下：</p>
 </li>
@@ -472,11 +472,11 @@ C:\Program Files\MongoDB\Server\3.2\bin
 storage:    
     dbPath: c:\data\db<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206213843422.png" alt="image-20221206213843422"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206213843422.png" alt="image-20221206213843422"></p>
 <ol start="3">
 <li><p>以管理员的身份打开命令行窗口</p>
 </li>
-<li><p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206213957828.png" alt="image-20221206213957828"></p>
+<li><p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206213957828.png" alt="image-20221206213957828"></p>
 </li>
 <li><p>执行如下的命令</p>
 </li>
@@ -486,14 +486,14 @@ storage:
 <p>​	上面命令的解释：</p>
 <pre class="line-numbers language-none"><code class="language-none">sc.exe create MongoDB binPath= "\"mongod的bin目录\mongod.exe\" --service --config=\"mongo的安装目录\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206214046456.png" alt="image-20221206214046456"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206214046456.png" alt="image-20221206214046456"></p>
 <ol start="5">
 <li><p>启动<code>mongodb</code>服务</p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206214245124.png" alt="image-20221206214245124"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206214245124.png" alt="image-20221206214245124"></p>
 </li>
 </ol>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206214237173.png" alt="image-20221206214237173"></p>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206214611591.png" alt="image-20221206214611591"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206214237173.png" alt="image-20221206214237173"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206214611591.png" alt="image-20221206214611591"></p>
 <ol start="7">
 <li><p>如果启动失败，证明上边的操作有误，<br>在控制台输入 <code>sc delete MongoDB</code> 删除之前配置的服务<br>然后从第一步再来一次</p>
 </li>
@@ -506,7 +506,7 @@ net start MongoDB
 
 net stop MongoDB<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ol>
-<p><img src="C:\Users\86182\AppData\Roaming\Typora\typora-user-images\image-20221206214818921.png" alt="image-20221206214818921"></p>
+<p><img src="/../images/MongoDB%E5%AD%A6%E4%B9%A0/image-20221206214818921.png" alt="image-20221206214818921"></p>
 <p>​     </p>
 <p>完成！</p>
 
